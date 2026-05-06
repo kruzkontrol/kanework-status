@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Kanework Order Status</title>
+<style>
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            background: #FFFFFF;
+            color: #1F1F1F;
+            padding: 32px 20px;
+        }
+        .page {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 36px;
+        }
+        .header h1 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 14px;
+            color: #1F1F1F;
+        }
+        .header .subtitle {
+            font-size: 14px;
+            color: #B43030;
+            text-decoration: underline;
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+        .header .last-updated {
+            margin-top: 16px;
+            font-size: 12px;
+            color: #888;
+            font-style: italic;
+            text-decoration: none;
+        }
+        .columns {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 0;
+        }
+        .column {
+            flex: 1;
+            text-align: center;
+            padding: 0 20px;
+            min-width: 0;
+        }
+        .column h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            line-height: 1.3;
+            color: #1F1F1F;
+        }
+        .sub-columns {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 16px;
+        }
+        .sub-col {
+            flex: 1;
+            min-width: 0;
+            text-align: center;
+        }
+        .sub-status {
+            /* Status side - typically narrower, fewer buckets */
+        }
+        .sub-time {
+            /* Time side - more buckets stacked vertically */
+        }
+        .divider {
+            width: 2px;
+            background: #C0392B;
+            min-height: 500px;
+            align-self: stretch;
+            flex-shrink: 0;
+        }
+        .bucket-block {
+            margin-bottom: 14px;
+        }
+        .pill {
+            display: inline-block;
+            padding: 5px 16px;
+            font-size: 13px;
+            font-weight: 700;
+            border: 1px solid;
+            min-width: 110px;
+        }
+        .names {
+            margin-top: 6px;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.5;
+            color: #2A2A2A;
+        }
+        .name {
+            padding: 1px 0;
+        }
+        @media (max-width: 900px) {
+            .columns { flex-direction: column; gap: 32px; }
+            .divider {
+                width: 60%;
+                height: 2px;
+                min-height: 0;
+                margin: 0 auto;
+            }
+        }
+        @media (max-width: 560px) {
+            .sub-columns { flex-direction: column; }
+        }
+    
+</style>
+</head>
+<body>
+<div class='page'>
+  <div class='header'>
+    <h1>Estimated Production Time</h1>
+    <p class='subtitle'>All tracking information will be placed on website and Paypal.</p>
+    <p class='subtitle'>If name has been removed from list, it has been shipped.</p>
+    <p class='last-updated'>Last updated: May 06, 2026 at 06:21 PM</p>
+  </div>
+  <div class='columns'>
+    <div class='column embroidery'>
+      <h2>Embroidered<br>3-5 weeks processing</h2>
+      <div class='sub-columns'>
+        <div class='sub-col sub-status'>
+      <div class='bucket-block'>
+        <span class='pill' style='background:#C5D86D;color:#1F2A05;border-color:#1F2A0533;'>Preparing to ship/Pickup</span>
+      </div>
+      <div class='bucket-block'>
+        <span class='pill' style='background:#9CC9DF;color:#0F2A36;border-color:#0F2A3633;'>In Progress</span>
+        <div class='names'>
+          <div class='name'>S. Aiddoo</div>
+          <div class='name'>A. Barlow</div>
+          <div class='name'>A. Barlow</div>
+          <div class='name'>J. Chaplin</div>
+          <div class='name'>R. Evans</div>
+          <div class='name'>A. Hudson</div>
+          <div class='name'>S. Jackson</div>
+          <div class='name'>D. Pino</div>
+          <div class='name'>A. Pollard</div>
+          <div class='name'>S. Reddick</div>
+          <div class='name'>A. Taylor</div>
+          <div class='name'>L. Williams</div>
+        </div>
+      </div>
+        </div>
+        <div class='sub-col sub-time'>
+      <div class='bucket-block'>
+        <span class='pill' style='background:#F7C942;color:#1A1303;border-color:#1A130333;'>0-1 Week</span>
+        <div class='names'>
+          <div class='name'>P. Derilus</div>
+          <div class='name'>T. Jobes</div>
+          <div class='name'>A. or Marquita Williams</div>
+        </div>
+      </div>
+      <div class='bucket-block'>
+        <span class='pill' style='background:#5AA3DD;color:#FFFFFF;border-color:#FFFFFF33;'>1-2 Weeks</span>
+      </div>
+      <div class='bucket-block'>
+        <span class='pill' style='background:#E59A8E;color:#1A0606;border-color:#1A060633;'>2-3 Weeks</span>
+        <div class='names'>
+          <div class='name'>C. Gibson</div>
+        </div>
+      </div>
+      <div class='bucket-block'>
+        <span class='pill' style='background:#1F1F1F;color:#FFFFFF;border-color:#FFFFFF33;'>3-4 Weeks</span>
+      </div>
+      <div class='bucket-block'>
+        <span class='pill' style='background:#7A8FB3;color:#FFFFFF;border-color:#FFFFFF33;'>4-5 Weeks</span>
+      </div>
+      <div class='bucket-block'>
+        <span class='pill' style='background:#FFFFFF;color:#1F1F1F;border-color:#1F1F1F33;'>6-7 Weeks</span>
+      </div>
+        </div>
+      </div>
+    </div>
+    <div class='divider'></div>
+    <div class='column lower'>
+      <h2>Lower Production Items<br>1-2 Weeks</h2>
+      <div class='sub-columns'>
+        <div class='sub-col sub-status'>
+      <div class='bucket-block'>
+        <span class='pill' style='background:#C5D86D;color:#1F2A05;border-color:#1F2A0533;'>Preparing to ship</span>
+      </div>
+      <div class='bucket-block'>
+        <span class='pill' style='background:#9CC9DF;color:#0F2A36;border-color:#0F2A3633;'>In Progress</span>
+        <div class='names'>
+          <div class='name'>J. Dodson</div>
+          <div class='name'>L. Fowler</div>
+          <div class='name'>C. Green</div>
+          <div class='name'>D. Hill Stanton</div>
+          <div class='name'>D. Hill Stanton</div>
+          <div class='name'>C. James Hicks</div>
+          <div class='name'>B. Jenkins</div>
+          <div class='name'>J. Pearce</div>
+        </div>
+      </div>
+        </div>
+        <div class='sub-col sub-time'>
+      <div class='bucket-block'>
+        <span class='pill' style='background:#F7C942;color:#1A1303;border-color:#1A130333;'>0-1 Week</span>
+        <div class='names'>
+          <div class='name'>C. Brantley</div>
+        </div>
+      </div>
+      <div class='bucket-block'>
+        <span class='pill' style='background:#C0392B;color:#FFFFFF;border-color:#FFFFFF33;'>1 Week</span>
+      </div>
+      <div class='bucket-block'>
+        <span class='pill' style='background:#1F2D62;color:#FFFFFF;border-color:#FFFFFF33;'>1-2 Weeks</span>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
